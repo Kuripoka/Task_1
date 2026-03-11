@@ -1,16 +1,16 @@
 import pytest
 from praktikum.database import Database
 from praktikum.ingredient_types import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
-from tests.data import BUNS_DATA, INGREDIENTS_DATA
+from data import BUNS_DATA, INGREDIENTS_DATA
 
 class TestDatabase:
-    def test_database_constructor_creates_buns(self):
+    def test_available_buns_returns_correct_count(self):
         database = Database()
-        assert len(database.buns) == 3
+        assert len(database.available_buns()) == 3
 
-    def test_database_constructor_creates_ingredients(self):
+    def test_available_ingredients_returns_correct_count(self):
         database = Database()
-        assert len(database.ingredients) == 6
+        assert len(database.available_ingredients()) == 6
 
     def test_database_has_sauces(self):
         database = Database()

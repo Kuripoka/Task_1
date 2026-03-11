@@ -1,5 +1,10 @@
 from praktikum.ingredient_types import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
 
+BUN_MOCK_NAME = 'Каменная булка'
+BUN_MOCK_PRICE = 100
+INGREDIENT_MOCK_1 = {"name": "Сыр", "price": 50, "type": "sauce"}
+INGREDIENT_MOCK_2 = {"name": "Колбаса", "price": 75, "type": "filling"}
+
 BUNS_DATA = {
     0: {"name": "black bun", "price": 100},
     1: {"name": "white bun", "price": 200},
